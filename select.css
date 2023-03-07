@@ -1,0 +1,27 @@
+/* .radio-input .radio-input_text-label {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.radio-input:hover .radio-input_text-label {
+  opacity: 1;
+}
+
+.radio-button-field_wrapper .rb_floating-label {
+  pointer-events: none;
+  opacity: 0;
+}
+.radio-button-field_wrapper:hover .rb_floating-label {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+} */
+
+/* Show tooltip to let users know they need to fill in all the fields*/
+/* .tooltip {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.investment-slide_cta:has(.disabled):hover .tooltip {
+  opacity: 1;
+} */
