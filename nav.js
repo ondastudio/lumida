@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //toggleNav
   $(".nav_menu-icon").on("click", function () {
-    $(navBar).toggleClass("open");
+    $(navBar).add("open");
 
     if (navBar.classList.contains("open")) {
       navBar.classList.remove("dark");
