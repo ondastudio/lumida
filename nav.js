@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //toggleNav
   $(".nav_menu-icon").on("click", function () {
-    $(navBar).add("open");
+    $(navBar).toggleClass("open");
 
     if (navBar.classList.contains("open")) {
       navBar.classList.remove("dark");
@@ -33,12 +33,26 @@ document.addEventListener("DOMContentLoaded", () => {
       gsap.set(".nav_button-outline", { color: "#102346" });
       gsap.set(".nav_button-outline", { borderColor: "#102346" });
       gsap.set(".is-white", { color: "#102346" });
+      $(".nav_button-outline")
+        .mouseover(function () {
+          $(this).find(" > div").css("color", "#102346");
+        })
+        .mouseout(function () {
+          $(this).find(" > div").css("color", "");
+        });
     } else {
       gsap.set(".nav-brand", { color: "#fff" });
       gsap.set(".nav_menu-icon_line", { backgroundColor: "#fff" });
       gsap.set(".nav_button-outline", { color: "#fff" });
       gsap.set(".nav_button-outline", { borderColor: "#fff" });
       gsap.set(".is-white", { color: "#fff" });
+      $(".nav_button-outline")
+        .mouseover(function () {
+          $(this).find(" > div").css("color", "#102346");
+        })
+        .mouseout(function () {
+          $(this).find(" > div").css("color", "");
+        });
     }
   };
 
